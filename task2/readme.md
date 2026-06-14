@@ -1,41 +1,39 @@
-# Task 2: Healthcare Data Visualization
+# Task 2: Healthcare Data Visualization (Pharma Dataset)
 
 ## 📌 Objective
-Transform cleaned healthcare data into **charts and graphs** to uncover insights and support better decision‑making.  
-Focus areas:
-- Disease distribution  
-- Age distribution  
-- Gender ratio  
-- Medication usage  
+Transform the cleaned pharmaceutical dataset into **charts and graphs** to uncover insights about product types, active ingredients, dosage strengths, and marketing categories.  
+This task focuses on visual storytelling to better understand healthcare and pharma trends.
 
 ---
 
 ## 🛠 Steps Performed
-1. **Load Cleaned Dataset**  
-   - Imported `Pharma_data_cleaned.csv` using `pandas`.
+1. **Load Dataset**  
+   - Imported `Pharma_data_cleaned.csv` using `pandas`.  
+   - Normalized column names for consistency.
 
-2. **Age Distribution**  
-   - Histogram of patient ages.  
-   - Grouped patients into age ranges (0–18, 19–35, 36–50, 51–65, 65+).  
-   - Boxplot of age by disease.
+2. **Product Type Distribution**  
+   - Bar chart showing frequency of different `PRODUCTTYPENAME`.
 
-3. **Gender Ratio**  
-   - Pie chart showing male vs female patient percentages.
+3. **Proprietary Names Word Cloud**  
+   - Word cloud generated from `PROPRIETARYNAME` to visualize brand name diversity.
 
-4. **Disease Distribution**  
-   - Horizontal bar chart of patient counts per disease.  
-   - Stacked bar chart showing disease distribution by gender.
+4. **Active Ingredient Frequency**  
+   - Bar chart of top 15 `SUBSTANCENAME` values to highlight most common active ingredients.
 
-5. **Medication Usage**  
-   - Pie chart of medication usage percentages.  
-   - Bar chart of total dosage per medication.
+5. **Dosage Strength Distribution**  
+   - Histogram of `ACTIVE_NUMERATOR_STRENGTH` to show dosage ranges.
 
-6. **Advanced Visualizations**  
-   - Correlation heatmap (Age vs Dosage).  
-   - Scatterplot of Age vs Dosage by disease.  
-   - Pairplot for numeric columns.  
-   - Heatmap of medication usage by age group.  
-   - (Optional) Word cloud for disease names.
+6. **Dosage Form Distribution**  
+   - Bar chart of `DOSAGEFORMNAME` to analyze how drugs are delivered (tablet, capsule, injection, etc.).
+
+7. **Route of Administration**  
+   - Bar chart of `ROUTENAME` to visualize common administration methods (oral, topical, intravenous).
+
+8. **Marketing Category Distribution**  
+   - Bar chart of `MARKETINGCATEGORYNAME` to show regulatory/marketing categories.
+
+9. **Labeler Frequency**  
+   - Bar chart of top 15 `LABELERNAME` values to identify leading pharmaceutical companies.
 
 ---
 
@@ -44,18 +42,19 @@ Focus areas:
 - **pandas** → data handling  
 - **matplotlib** → charting  
 - **seaborn** → advanced visualizations  
-- *(Optional)* **wordcloud** → text visualization  
+- **wordcloud** → text visualization  
 
 ---
 
 ## ✅ Results
-- Clear visualizations of patient demographics, disease prevalence, and medication usage.  
-- Identified trends such as most common diseases, medication usage patterns, and age group distributions.  
-- Advanced plots (heatmaps, scatterplots, pairplots) provide deeper insights into relationships between variables.  
+- Clear visualizations of product types, dosage forms, and administration routes.  
+- Identified top active ingredients and proprietary names.  
+- Highlighted dosage strength distribution patterns.  
+- Showed leading pharmaceutical companies and their product counts.  
 
 ---
 
 ## 📂 Outputs
 - Visualizations generated directly in Jupyter Notebook / Python script.  
-- Cleaned dataset from Task 1 (`Pharma_data_cleaned.csv`) used as input.  
-- Optional summary report can be extended with visualization insights.
+- Dataset used: `Pharma_data_cleaned.csv`.  
+- Word cloud and multiple bar charts provide a comprehensive view of pharma trends.
