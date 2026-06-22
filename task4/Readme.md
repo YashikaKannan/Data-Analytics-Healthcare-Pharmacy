@@ -8,7 +8,8 @@ This task analyzes **Adverse Drug Reaction (ADR) reports** to identify potential
 ## ⚙️ Requirements
 - Python 3.8+  
 - Libraries: `pandas`, `matplotlib`, `seaborn`  
-- Dataset: FDA Adverse Event Reports 2015–2026 (Cleaned)  
+- Dataset: FDA Adverse Event Reports 2015–2026 (Cleaned)
+- [ADR Dataset (Kaggle Link)](https://www.kaggle.com/datasets/kanchana1990/fda-drug-adverse-event-reports-2015-to-2026-faers)
 
 ---
 
